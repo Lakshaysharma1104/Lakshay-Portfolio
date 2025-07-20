@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer components{
+ *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+ }
+  .light {
+   @apply bg-linear-to-b from-cyan-200 to-blue-300  bg-clip-text text-gray-900;
+  color: #121212;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  }
+  .dark .about-bg{
+    
+   @apply bg-[#111827]  
+  }
+  
+  .dark{
+    @apply h-[calc(100vh-60px)] w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white
+    
+  }
+  .dark #about-Me,.dark .my-Projects,.dark .contact-heading{
+    @apply bg-gradient-to-r from-cyan-400 to-white 
+  }
+  .light #about-Me,.light .my-Projects,.light .contact-heading{
+    @apply bg-gradient-to-r from-cyan-400 to-black 
+  }
+  .dark nav{
+   @apply bg-[#0f0f0f]
+  }
+  .light nav{
+    @apply bg-linear-to-bl from-white to-cyan-200
+  }
+  .light nav a{
+    @apply text-black hover:text-cyan-400
+  }
+  .dark nav a{
+    @apply text-cyan-400 hover:text-white
+  }
+  .profile-pic{
+    background-image:url("assets/profile-pic.jpg");
+     background-size: cover;
+     background-position:bottom;
+    
+  }
+  .profile-pic:hover{
+    box-shadow: 0 0 60px  #22d3ee;
+  }
+  .link-style {
+  @apply hover:scale-115 hover:text-white transition-all duration-200 ;
+}
+  
+.about-bg{
+ @apply h-[150px] rounded-2xl shadow-2xs shadow-cyan-600  w-[100%] text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px]
+}
+.p-size p {
+  font-size: 12px;
+}
+@media (min-width: 640px) {
+  .p-size p { font-size: 15px; }
+}
+@media (min-width: 768px) {
+  .p-size p { font-size: 18px; }
+}
+@media (min-width: 1024px) {
+  .p-size p { font-size: 20px; }
+}
+
+.card{
+  overflow: hidden;
+  object-fit :cover;
+  height:100%;
+  width:100%;
+  
+}
+.project-written{
+  @apply absolute flex items-center justify-center h-[100%] w-[100%] z-1 hover:opacity-0 transition-opacity duration-1000 font-semibold backdrop-blur-sm hover:backdrop-blur-none text-cyan-400 active:opacity-0;
+}
+
+.contact{
+  @apply h-50 brightness-50 hover:brightness-100 hover:scale-200 z-0 hover:z-10 transition-all ease-in-out
+  duration-2000
+}
+
+}
