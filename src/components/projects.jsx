@@ -1,3 +1,7 @@
+import myntra from "../assets/myntra.png";
+import golf from "../assets/golf.png";
+import cococola from "../assets/cococola.png";
+import bubble from "../assets/bubble.png";
 function Projects() {
   return (
     <>
@@ -14,7 +18,7 @@ function Projects() {
           border-0 rounded-2xl  flex items-center justify-center  overflow-hidden"
           >
             <h3 className=" project-written">Myntra project</h3>
-            <img className="card" src="../src/assets/myntra.png" alt="myntra" />
+            <img className="card" src={myntra} alt="myntra" />
           </div>
           <div
             id="golf"
@@ -22,7 +26,7 @@ function Projects() {
           border-0 rounded-2xl overflow-hidden flex items-center justify-center "
           >
             <h3 className=" project-written">Familygolf project</h3>
-            <img className="card" src="../src/assets/golf.png" alt="myntra" />
+            <img className="card" src={golf} alt="myntra" />
           </div>
           <div
             id="coco"
@@ -32,7 +36,7 @@ function Projects() {
             <h3 className=" project-written">coco-cola project</h3>
             <img
               className="card"
-              src="../src/assets/cococola.png"
+              src={cococola}
               alt="myntra"
             />
           </div>
@@ -42,7 +46,7 @@ function Projects() {
           border-0 rounded-2xl overflow-hidden flex items-center justify-center "
           >
             <h3 className=" project-written">bubble game</h3>
-            <img className="card" src="../src/assets/bubble.png" alt="myntra" />
+            <img className="card" src={bubble} alt="myntra" />
           </div>
         </div>
       </div>

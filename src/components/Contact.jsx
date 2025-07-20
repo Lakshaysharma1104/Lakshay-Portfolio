@@ -1,6 +1,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import mail from "../assets/mail.png";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
 function Contact() {
 
   return (
@@ -16,7 +18,7 @@ function Contact() {
         </div>
         <div className="h-[calc(100vh-60px)] w-full flex justify-around items-center transition-all duration-1000 ease-in-out relative">
           <a href="mailto:lakshay1223093@jmit.ac.in" target="_blank">
-            <img className="contact" src="../src/assets/mail.png" alt="mail" />
+            <img className="contact" src={mail} alt="mail" />
           </a>
           <a
             href="https://www.linkedin.com/in/lakshay-sharma-138184306/"
@@ -24,14 +26,14 @@ function Contact() {
           >
             <img
               className="contact"
-              src="../src/assets/linkedin.png"
+              src={linkedin}
               alt="linkedin-image"
             />
           </a>
           <a href="https://github.com/Lakshaysharma1104" target="_blank">
             <img
               className="contact"
-              src="../src/assets/github.png"
+              src={github}
               alt="github-image"
             />
           </a>
