@@ -4,6 +4,10 @@
  *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
  }
+  ::-webkit-scrollbar{
+    width: 0;
+    display:none;
+  }
   .light {
    @apply bg-linear-to-b from-cyan-200 to-blue-300  bg-clip-text text-gray-900;
   color: #121212;
