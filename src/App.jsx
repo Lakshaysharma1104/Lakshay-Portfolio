@@ -4,7 +4,7 @@ import AboutMe from "./components/aboutMe";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Contact from "./components/Contact";
-
+import { Analytics } from "@vercel/analytics/next"
 function App(){
   return(
     <>
@@ -14,6 +14,7 @@ function App(){
     <Skills />
     <Projects />
    <Contact />
+      <Analytics />
     </>
   )
 }
